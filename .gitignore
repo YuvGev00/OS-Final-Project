@@ -22,6 +22,3 @@ analyzer
 
 # VS Code settings that might contain personal info
 .vscode/settings.json
-
-# Personal directories with identifying information
-yuval_geva_*
