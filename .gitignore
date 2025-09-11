@@ -1,0 +1,27 @@
+# Build output
+output/
+*.so
+analyzer
+
+# System files
+.DS_Store
+*/.DS_Store
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+*~
+
+# Compiled objects
+*.o
+*.a
+
+# Debug files
+*.dSYM/
+
+# VS Code settings that might contain personal info
+.vscode/settings.json
+
+# Personal directories with identifying information
+yuval_geva_*
