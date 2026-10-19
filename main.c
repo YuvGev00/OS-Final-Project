@@ -26,10 +26,9 @@ typedef struct {
 //helper Functions
 
 /*
-analyzer path depends on implementation ( argv[0]). 
-to grader : notice that the usage will return the message with argv[0](analyzer_path),
-            and not hardcoded ./analyzer like in pdf... (piazza @401)
-*/
+ * Usage message prints argv[0] as the program name, so it stays correct
+ * however the analyzer binary is invoked or renamed.
+ */
 void print_usage(const char* analyzer_path) {
     printf("Usage: %s <queue_size> <plugin1> <plugin2> ... <pluginN>\n", analyzer_path);
     printf("Arguments:\n");

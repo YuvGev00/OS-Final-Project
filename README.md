@@ -1,5 +1,7 @@
 # Text Processing Pipeline with Dynamic Plugins
 
+[![build](https://github.com/YuvGev00/OS-Final-Project/actions/workflows/build.yml/badge.svg)](https://github.com/YuvGev00/OS-Final-Project/actions/workflows/build.yml)
+
 ## Overview
 A modular text processing system that chains plugins together to transform input text. Each plugin runs in its own thread with a bounded queue, and the entire pipeline is dynamically configurable at runtime using shared libraries (.so files).
 
@@ -20,9 +22,10 @@ A modular text processing system that chains plugins together to transform input
 
 ## Building
 ```bash
-./build.sh
+make          # or: ./build.sh
 ```
-This compiles the main analyzer program and all plugins as shared libraries.
+This compiles the main analyzer program and all plugins as shared libraries into `output/`.
+Targets Linux (glibc, pthreads, `dlopen`); `make test` builds and runs the test suite.
 
 ## Usage
 ```bash
